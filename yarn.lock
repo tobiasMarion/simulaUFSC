@@ -157,7 +157,7 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
   integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
 
-"@internationalized/date@^3.5.0":
+"@internationalized/date@^3.5.0", "@internationalized/date@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.5.1.tgz#14401139f70c1ef14b845d3cac8912e82e82adcc"
   integrity sha512-LUQIfwU9e+Fmutc/DpRTGXSdgYZLBegi4wygCWDSVmUdLTaMHsQyASDiJtREwanwKuQLq0hY76fCJ9J/9I2xOQ==
@@ -208,10 +208,22 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@melt-ui/svelte@0.65.2":
-  version "0.65.2"
-  resolved "https://registry.yarnpkg.com/@melt-ui/svelte/-/svelte-0.65.2.tgz#3bbdc0d62debf7da66569e36788f1b9f2f60a5c1"
-  integrity sha512-BpsSl9Bjp1++8U3+LaDOFUoX/PFQ9N7QWFhlFdUEZduhrbVyU70v9A459SKrQ+esFSjvh1AvqJYkMAUJXJlAmQ==
+"@melt-ui/svelte@0.61.2":
+  version "0.61.2"
+  resolved "https://registry.yarnpkg.com/@melt-ui/svelte/-/svelte-0.61.2.tgz#2948dd4ef47c4c5b5cf74d028c5143a5f986d239"
+  integrity sha512-BHkD9G31zQBToA4euDRBgTQRvWxT9scufOVCXgDO6HKTvyxFspbWT2bgiSFqAK4BbAGDn9Ao36Q8F9O71KN4OQ==
+  dependencies:
+    "@floating-ui/core" "^1.3.1"
+    "@floating-ui/dom" "^1.4.5"
+    "@internationalized/date" "^3.5.0"
+    dequal "^2.0.3"
+    focus-trap "^7.5.2"
+    nanoid "^4.0.2"
+
+"@melt-ui/svelte@0.67.0":
+  version "0.67.0"
+  resolved "https://registry.yarnpkg.com/@melt-ui/svelte/-/svelte-0.67.0.tgz#8a524987818683eada053c615503cfb96a7a09ef"
+  integrity sha512-fd9PsDE6sKbeyExagqH0nOpZEnDqyr2efbkjfmCRRYXVW5vlDEOPaSB+mg4Tjch121102sFH1Od+MlXwmeHy3A==
   dependencies:
     "@floating-ui/core" "^1.3.1"
     "@floating-ui/dom" "^1.4.5"
@@ -458,14 +470,22 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-bits-ui@^0.11.8:
-  version "0.11.8"
-  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.11.8.tgz#e8dc3c5bc26ac4e9a022476f8546d442ea99d29b"
-  integrity sha512-T3YaT88OJguBoUU/MSncf41fiIc+5/ka8Au2LUDo0nSECex+LFY40+hKWLJc5tRT56avkyHsI7x9daA2r9eS/g==
+bits-ui@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.13.0.tgz#dff61c8b4a95b1f589105444da74396bdc6702e7"
+  integrity sha512-XMvGKhJQMvSWqaan0eaIx1uAVcFBpImgO6xf+XTb7UhqdzbH0//6be4DeR1nRUpIU70XoU1B7i3lMPrTWg37ng==
   dependencies:
-    "@internationalized/date" "^3.5.0"
-    "@melt-ui/svelte" "0.65.2"
+    "@internationalized/date" "^3.5.1"
+    "@melt-ui/svelte" "0.67.0"
     nanoid "^5.0.4"
+
+bits-ui@^0.9.0:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.9.9.tgz#02b20e41ad673670259aadcefe2c75d827fe3626"
+  integrity sha512-LkdkyTtpXdkjBzPZJVJgpcre4fut6DONoprMfadHFo82HNUhph+02CxDjYEcZcThb5z4YjSxMlCYvQPZm+YtfQ==
+  dependencies:
+    "@melt-ui/svelte" "0.61.2"
+    nanoid "^5.0.3"
 
 brace-expansion@^2.0.1:
   version "2.0.1"
@@ -520,6 +540,14 @@ clsx@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
   integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
+
+cmdk-sv@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/cmdk-sv/-/cmdk-sv-0.0.12.tgz#55b0b57d4a5bf4303c0650bf83739b51ef52d0ba"
+  integrity sha512-d+eILSOb2W+/3U/j7xGTgGRrZkFB/z4Xlvj0ADrWhf34y9YLzJon3JCGP2hMil5IrVm0P/+IFIeCF5l3//kcjA==
+  dependencies:
+    bits-ui "^0.9.0"
+    nanoid "^5.0.2"
 
 code-red@^1.0.3:
   version "1.0.4"
@@ -944,7 +972,7 @@ nanoid@^4.0.2:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
   integrity sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==
 
-nanoid@^5.0.4:
+nanoid@^5.0.2, nanoid@^5.0.3, nanoid@^5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.0.4.tgz#d2b608d8169d7da669279127615535705aa52edf"
   integrity sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==
